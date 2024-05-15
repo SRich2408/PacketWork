@@ -9,6 +9,6 @@ public class CircleRunner {
         System.out.println("The area is " + area);
         Seb.changeR(1);
         double area2 = Seb.getArea();
-        System.out.println("The area is " + area2);
+        System.out.println("The new area is " + area2);
     }
 }
