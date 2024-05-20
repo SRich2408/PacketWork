@@ -1,7 +1,7 @@
 package Dice;
 
 public class Dice {
-   private double die1, die2;
+   private int die1, die2;
 
    public Dice(){
         die1 = 1;
@@ -9,12 +9,13 @@ public class Dice {
    }
 
    public void roll(){
-       die1 = Math.random(1, 6);
-       die2 = Math.random(1, 6);
+       die1 = (int)(6 * Math.random()) + 1;
+       die2 = (int)(6 * Math.random()) + 1;
    }
 
    public int getTotal(){
-       sum = die1 + die2;
+       int sum = die1 + die2;
+       return sum;
    }
     
 }
